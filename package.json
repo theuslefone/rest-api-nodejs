@@ -1,0 +1,19 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "Sistema de login com encriptação de senha ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theuslefone/rest-api-nodejs.git"
+  },
+  "author": "Matheus K. Ramos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theuslefone/rest-api-nodejs/issues"
+  },
+  "homepage": "https://github.com/theuslefone/rest-api-nodejs#readme"
+}
