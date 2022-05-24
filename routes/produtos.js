@@ -19,8 +19,15 @@ router.get('/:id_produto', (req, res, next) => {
 })
 
 router.post('/', (req, res, next) => {
+    const produto = {
+        nome: req.body.nome,
+        descricao: req.body.descricao,
+        preco: req.body.preco,
+        foto: req.body.foto
+    }
     res.status(201).send({
-        mensagem: 'Você adicionou um produto'
+        mensagem: 'Você adicionou um produto',
+        produto: produto
     });
 });
 
