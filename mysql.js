@@ -1,11 +1,17 @@
 const mysql = require('mysql');
 
-var poll = mysql.createPoll({
-    "user": process.env.USER || "root",
-    "password": process.env.PASSWORD || "",
-    "database": process.env.DATABASE || "ecommerce",
-    "host": process.env.HOST || "localhost",
-    "host": process.env.PORTDB || "3306"
+var pool = mysql.createPool({
+    "user": process.env.MYSQL_USER,
+    "password": process.env.MYSQL_PASSWORD,
+    "database": process.env.MYSQL_DATABASE,
+    "host": process.env.MYSQL_HOST,
+    "port": process.env.MYSQL_PORT
+
+    // "user": 'root',
+    // "password": '',
+    // "database": 'ecommerce',
+    // "host": 'localhost',
+    // "port": "3306"
 });
 
-exports.poll = poll;
+exports.pool = pool;
